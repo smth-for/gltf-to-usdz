@@ -1,4 +1,4 @@
-# GLTF to USDZ Service
+# GLTF to USDZ
 
 ## What's this repository about?
 
