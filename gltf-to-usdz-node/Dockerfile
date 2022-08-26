@@ -4,7 +4,7 @@ FROM smthfor/usd:latest
 WORKDIR /usr/src/ufg
 
 # Configuration
-ARG UFG_RELEASE="6d288cce8b68744494a226574ae1d7ba6a9c46eb"
+ARG UFG_RELEASE="99fe71720917bb31e0b08723295a14b5d4ba7825"
 ARG UFG_SRC="/usr/src/ufg"
 ARG UFG_INSTALL="/usr/local/ufg"
 ENV USD_DIR="/usr/src/app/USDinst"
@@ -31,7 +31,7 @@ RUN apt update && apt -y upgrade
 RUN apt-get -y install curl dirmngr apt-transport-https lsb-release ca-certificates musl-dev  
 RUN ln -s /usr/lib/x86_64-linux-musl/libc.so /lib/libc.musl-x86_64.so.1
 
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
 RUN apt-get -y install nodejs
 RUN apt autoremove -y && \
 	apt-get autoclean -y
