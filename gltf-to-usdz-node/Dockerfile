@@ -31,7 +31,7 @@ RUN apt update && apt -y upgrade
 RUN apt-get -y install curl dirmngr apt-transport-https lsb-release ca-certificates musl-dev  
 RUN ln -s /usr/lib/x86_64-linux-musl/libc.so /lib/libc.musl-x86_64.so.1
 
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_22.x | bash -
 RUN apt-get -y install nodejs
 RUN apt autoremove -y && \
 	apt-get autoclean -y
