@@ -19,5 +19,5 @@ There is also a version build with node installed, can be found in `gltf-to-usdz
 
 Run the docker command:
 
-`docker run -it --rm -v $(PWD):/usr/app smthfor/gltf-to-usdz:latest inputfile.glb outputfile.usdz`
+`docker run -it --rm -v $PWD:/usr/app smthfor/gltf-to-usdz:latest inputfile.glb outputfile.usdz`
 
